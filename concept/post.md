@@ -139,7 +139,7 @@ Si seulement il existait un outil qui permette de saisir une description et d'ob
 
 ### Pertinence des LLM
 
-Et oui, **un LLM semble être l'outil idéal**. Non seulement l'interface sous forme de prompt correspond tout à fait au besoin. Mais ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
+Et oui, **un [LLM](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. Non seulement l'interface sous forme de prompt correspond tout à fait au besoin. Mais ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
 
 Il suffit donc théoriquement de saisir une description initiale, les critères d'évaluation, et de demander une liste de propositions. 
 
