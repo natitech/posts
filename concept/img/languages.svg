@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="480" height="640" viewBox="0, 0, 480, 640">
+  <g id="Calque_1">
+    <text transform="matrix(1, 0, 0, 1, 168.357, 265.686)">
+      <tspan x="-42.007" y="0.783" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">High Level</tspan>
+    </text>
+    <path d="M168.857,218.365 C123.862,218.365 87.386,173.96 87.386,119.183 C87.386,64.406 123.862,20 168.857,20 C213.852,20 250.329,64.406 250.329,119.183 C250.329,173.96 213.852,218.365 168.857,218.365 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 168.357, 76.766)">
+      <tspan x="-25.204" y="-8.073" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Domain </tspan>
+      <tspan x="-33.605" y="7.927" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Language</tspan>
+    </text>
+    <path d="M168.857,621 C104.298,621 51.963,516.858 51.963,388.393 C51.963,259.928 104.298,155.786 168.857,155.786 C233.416,155.786 285.751,259.928 285.751,388.393 C285.751,516.858 233.416,621 168.857,621 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M168.857,356.513 C123.862,356.513 87.386,311.579 87.386,256.149 C87.386,200.72 123.862,155.786 168.857,155.786 C213.852,155.786 250.329,200.72 250.329,256.149 C250.329,311.579 213.852,356.513 168.857,356.513 z" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-dasharray="6,5"/>
+    <text transform="matrix(1, 0, 0, 1, 168.357, 526.04)">
+      <tspan x="-37.806" y="0.783" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Low Level</tspan>
+    </text>
+    <path d="M167.676,186.485 L318.812,155.786" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <path d="M285.751,381.308 L318.812,348.248" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+    <text transform="matrix(1, 0, 0, 1, 373.424, 348.928)">
+      <tspan x="-37.806" y="-8.073" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Technical </tspan>
+      <tspan x="-33.605" y="7.927" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Language</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 373.424, 155.286)">
+      <tspan x="-42.007" y="-8.073" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Ubiquitous </tspan>
+      <tspan x="-33.605" y="7.927" font-family="CourierNewPS-BoldMT" font-size="14" fill="#000000">Language</tspan>
+    </text>
+  </g>
+</svg>

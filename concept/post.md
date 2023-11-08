@@ -44,7 +44,7 @@ Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d
 
 Il n'est pas toujours nécessaire de passer trop de temps à trouver un bon terme. En fait, **le temps investi devrait être proportionnel au niveau d'abstraction**. 
 
-![Langages et niveau d'abstraction](img/languages.png)
+![Langages et niveau d'abstraction](img/languages.svg)
 
 En effet, les caractéristiques d'un code de bas niveau d'abstraction font que l'impact d'un mauvais nommage est limité :
 - Il est plus concret : donc souvent plus facile à nommer
@@ -139,7 +139,7 @@ Si seulement il existait un outil qui permette de saisir une description et d'ob
 
 ### Pertinence des LLM
 
-Et oui, **un [LLM](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
+Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
 
 Il suffit donc théoriquement de saisir une description initiale, les critères d'évaluation, et de demander une liste de propositions. 
 
