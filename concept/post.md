@@ -84,11 +84,9 @@ Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgaris�
 
 Une idée assez simple pour trouver les candidats est d'utiliser un dictionnaire de synonymes sur une ou plusieurs propositions initiales de noms communs. 
 
-![Recherche d'un terme à partir de l'anglais](img/english.png)
+Il est possible de partir directement de l'anglais ou de la langue du métier. Dans ce cas, il est intéressant d'obtenir des suggestions par traduction et même par rétrotraduction. L'objectif est d'arriver à une liste de propositions pertinentes en anglais. 
 
-A noter qu'il est possible de partir directement de l'anglais mais aussi de la langue du métier. Dans ce cas, il est possible obtenir des suggestions par traduction et même par rétro traduction. L'objectif est d'arriver à une liste de propositions pertinentes en anglais. 
-
-![Recherche d'un terme à partir du français](img/french.png)
+![Process de recherche d'un terme](img/process.svg)
 
 Par exemple :
 - La description faite par le client : *contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple)*
