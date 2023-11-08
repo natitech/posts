@@ -210,17 +210,17 @@ Il y a encore quelques temps, je pensais que notre véritable rôle pourrait jus
 
 [^30]: [Klaus Bayrhammer. You spend much more time reading code than writing code. 2020](https://bayrhammer-klaus.medium.com/you-spend-much-more-time-reading-code-than-writing-code-bc953376fe19)
 
-[^40]: F. Deißenböck and M. Pizka. Concise and consistent naming. 2005
+[^40]: [F. Deißenböck and M. Pizka. Concise and consistent naming. 2005](https://itestra.com/wp-content/uploads/2018/03/06_itestra_concise_and_consistent_naming.pdf)
 
 [^50]: B. Boehm and V. R. Basili. Software defect reduction top 10 list. 2001
 
 [^60]: [Sarah Fakhoury, Yuzhan Ma, Venera Arnaoudova, and Olusola Adesope. The Effect of Poor Source Code Lexicon and Readability on Developers' Cognitive Load. 2018](https://doi.org/10.1145/3196321.3196347)
 
-[^61]: J. Siegmund, C. Kästner, S. Apel, C. Parnin, A. Bethmann, T. Leich, G. Saake, and A. Brechmann. Understanding understanding source code with funcional magnetic resonance imaging. 2014
+[^61]: [J. Siegmund, C. Kästner, S. Apel, C. Parnin, A. Bethmann, T. Leich, G. Saake, and A. Brechmann. Understanding source code with functional magnetic resonance imaging. 2014](https://kilthub.cmu.edu/articles/Understanding_Understanding_Source_Code_with_Functional_Magnetic_Resonance_Imaging/6626357/files/12123905.pdf)
 
-[^70]: Delano Oliveira, Reydne Bruno, Fernanda Madeiral†, Fernando Castor. Evaluating Code Readability and Legibility: An Examination of Human-centric Studies. 2021
+[^70]: [Delano Oliveira, Reydne Bruno, Fernanda Madeiral†, Fernando Castor. Evaluating Code Readability and Legibility: An Examination of Human-centric Studies. 2021](https://arxiv.org/pdf/2110.00785.pdf)
 
-[^80]: Bonita Sharif and Jonathan I. Maletic. An Eye Tracking Study on camelCase and under_score Identifier Styles. 2010
+[^80]: [Bonita Sharif and Jonathan I. Maletic. An Eye Tracking Study on camelCase and under_score Identifier Styles. 2010](https://www.researchgate.net/profile/Bonita-Sharif/publication/224159770_An_Eye_Tracking_Study_on_camelCase_and_under_score_Identifier_Styles/links/00b49534cc03bab22b000000/An-Eye-Tracking-Study-on-camelCase-and-under-score-Identifier-Styles.pdf)
 
 [^90]: [HackerNews discussion around naming a very specific variable.](https://news.ycombinator.com/item?id=31436814)
 
@@ -230,7 +230,7 @@ Il y a encore quelques temps, je pensais que notre véritable rôle pourrait jus
 
 [^111]: [Sean Glatch. The importance of word choice in writing. 2022](https://writers.com/word-choice-in-writing)
 
-[^120]: J. C. Hofmeister, J. Siegmund, and D. V. Holt. Shorter Identifier Names Take Longer to Comprehend. 2019
+[^120]: [J. C. Hofmeister, J. Siegmund, and D. V. Holt. Shorter Identifier Names Take Longer to Comprehend. 2019](https://www.infosun.fim.uni-passau.de/publications/docs/HoSeHo17.pdf)
 
 [^130]: D. Binkley, D. Lawrie, S. Maex, and C. Morrell. Identifier length and limited programmer memory. 2009
 
