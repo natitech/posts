@@ -69,10 +69,10 @@ Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les m
 
 En anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt être une recherche d'un nom commun.
 
-- Shipping -> ship() : assez naturel
-- Discount -> discount() : possible mais impossible de distinguer le nom du verbe
-- Digital -> digitalize() ou digitize() : risque de confusion, ne portent pas le même sens
-- Unicorn -> unicornize() : possible mais un peu forcé, pas très élégant
+- *Shipping* -> ship() : assez naturel
+- *Discount* -> discount() : possible mais impossible de distinguer le nom du verbe
+- *Digital* -> digitalize() ou digitize() : risque de confusion, ne portent pas le même sens
+- *Unicorn* -> unicornize() : possible mais un peu forcé, pas très élégant
 
 ### Lister des candidats
 
@@ -141,7 +141,7 @@ Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_la
 
 Il suffit donc théoriquement de saisir une description initiale, les critères d'évaluation, et de demander une liste de propositions. 
 
-Voici un exemple sans doute un peu naïf de prompt avec ces 3 paragraphes :
+En partant de cette même description faite par le client : *contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple)*, voici un exemple sans doute un peu naïf de prompt avec ces 3 paragraphes :
 
 ```
 Humain > Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
