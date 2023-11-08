@@ -110,7 +110,7 @@ Mais il existe d'autres critères que le sens.
 Une approche intéressante pour l'évaluation du meilleur terme est de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (méthode) 
 - Puisse se décliner au pluriel sans efforts de compréhension
-- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres, en fait au moins une syllabe (ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?)
+- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?)
 - Utiliser des termes dans le registre courant (par opposition à soutenu ou vulgaire)
 - Utiliser des termes qui ne soient pas trop équivoques, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" ("mot valise" en français ?) [^140]
 - Ne pas utiliser de termes qui sont réservés au développement ou à l'infrastructure comme *Factory* ou *Container*
