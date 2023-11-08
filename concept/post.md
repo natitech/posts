@@ -10,7 +10,7 @@ Ce vocabulaire initial est très souvent incomplet. D'une part, le client n'a pa
 
 En général, cette activité est plaisante. Il y a en effet quelque chose de très créatif à révéler une idée qui était cachée. Mais c'est aussi une activité assez intense, avec parfois plusieurs heures passées à tâtonner. 
 
-Cela m'a amené à me demander : ce temps passé est-il vraiment nécessaire dans tous les cas ? Est ce qu'il est possible d'optimiser cette recherche et de trouver efficacement le bon terme ?
+Se posent alors les questions suivantes : ce temps passé est-il vraiment nécessaire dans tous les cas ? Est ce qu'il est possible d'optimiser cette recherche et de trouver efficacement le bon terme ?
 
 ### Lisibilité et enjeux
 
