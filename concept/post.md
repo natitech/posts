@@ -139,11 +139,11 @@ Si seulement il existait un outil qui permette de saisir une description et d'ob
 
 ### Pertinence des LLM
 
-Et oui, **un [LLM](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. Non seulement l'interface sous forme de prompt correspond tout à fait au besoin. Mais ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
+Et oui, **un [LLM](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
 
 Il suffit donc théoriquement de saisir une description initiale, les critères d'évaluation, et de demander une liste de propositions. 
 
-Voici un exemple naïf de prompt avec ces 3 paragraphes :
+Voici un exemple sans doute un peu naïf de prompt avec ces 3 paragraphes :
 
 ```
 Humain > Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
@@ -194,7 +194,7 @@ A ce sujet. Comme dans beaucoup d'autres métiers, l'émergence des LLM est une 
 - Certains proposent que les tests restent la prérogative des humains et que la machine s'occupe d'écrire le code de production ;
 - D'autres soulignent que les LLM sont incapables d'écrire du code propre notamment parce que les LLM sont incapables de faire du Test Driven Development :"Writing tests is typically a task performed by human developers to ensure the correctness and robustness of their software." [^160]
 
-Il y a encore quelques temps, je pensais que notre véritable rôle pourrait justement être de rendre lisible la complexité par le nommage et que notre imagination produirait de meilleurs résultats. Mais je n'en suis désormais plus si sûr... A moins d'écrire un logiciel extrêmement original, la plupart du temps nous cherchons à trouver des termes dont l'usage n'est pas confidentiel. Il parait donc légitime de  demander au LLM. Il peut être regrettable d'utiliser une langue ainsi appauvrie et consensuelle mais il faut sans doute l'assumer dans ce cas.
+Il y a encore quelques temps, je pensais que notre véritable rôle pourrait justement être de rendre lisible la complexité par le nommage et que notre imagination produirait de meilleurs résultats. Mais je n'en suis désormais plus si sûr... A moins d'écrire un logiciel extrêmement original, la plupart du temps nous cherchons à trouver des termes dont l'usage n'est pas confidentiel. Il parait donc légitime de demander à un LLM. Il peut être regrettable d'utiliser une langue ainsi appauvrie et consensuelle mais il faut probablement l'assumer dans ce cas.
 
 **Finalement, qu'en pensez-vous ?** Le nommage doit-il être aussi compliqué ? Y a-t-il d'autres outils / process ? Faut-il utiliser les LLM pour cela ? Quels sont les meilleurs prompts ?
 
