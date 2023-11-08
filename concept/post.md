@@ -20,7 +20,7 @@ Une très grande partie du temps de développement est consacré à lire du code
 
 Trouver les bons termes est donc faire preuve d'empathie pour tous les lecteurs du code. C'est même ainsi qu'est rendu possible le travail en équipe. 
 
-Même en étant seul, quelques années (ou quelques mois...) suffisent à être étranger à son propre code. Or, la maintenance d'un projet représente généralement 70% du cout total du projet [^5]. 
+Même en étant seul, quelques années (ou quelques mois...) suffisent à être étranger à son propre code. Or, la maintenance d'un projet représente généralement 70% du cout total du projet [^50]. 
 
 Certaines études essayent de creuser d'avantage cette notion de lisibilité en l'associant à la notion de charge cognitive. Il devient alors possible de quantifier une amélioration ou une détérioration de lisibilité en mesurant l'activité cérébrale ou la précision et le temps de réponse à des tests de compréhension de code [^60] [^61]. 
 
