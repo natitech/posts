@@ -30,11 +30,11 @@ Quelles que soient les méthodes utilisées, il parait imprudent de ne pas tenir
 
 Pour améliorer le nommage, il existe de nombreuses recommandations de syntaxe. On y trouve par exemple des arbitrages entre camelCase et under_score (ou snake_case). 
 
-Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation under_score demanderait moins d'effort en lecture mais serait plus imprécise que le camelCase [^80].
+Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation under_score demande moins d'effort en lecture mais est plus imprécise que le camelCase [^80].
 
 Une autre recommandation intéressante est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
 
-Cependant, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
+Globalement, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
 
 L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions.
 
@@ -48,21 +48,21 @@ Il n'est pas toujours nécessaire de passer trop de temps à trouver un bon term
 
 En effet, les caractéristiques d'un code de bas niveau d'abstraction font que l'impact d'un mauvais nommage est limité :
 - Il est plus concret : donc souvent plus facile à nommer
-- Il a une portée plus limitée, généralement encapsulé / couplage afférent plus bas : donc plus facile à renommer
+- Il a une portée plus limitée, généralement encapsulé, généralement couplage afférent plus bas : donc plus facile à REnommer
 - Il est plus rarement lu car lorsque nous lisons du code, nous ne rentrons pas dans tous les détails d'implémentation, nous restons le plus souvent assez haut dans l'abstraction avant de creuser : donc les termes choisis auront moins d'impact sur la lisibilité globale du projet
-- Il faut passer par le code de haut niveau avant de le lire, tout ce qui est lu avant va donc aider à contextualiser, et donc le nommage est moins critique
+- Il faut passer par le code de haut niveau avant de le lire : tout ce qui est lu avant va donc aider à contextualiser, et donc le nommage est moins critique
 
 Au contraire, l'effort de nommage doit donc se concentrer sur le haut niveau d'abstraction car :
 - Beaucoup de termes seront forgés à partir de là
 - Il peut être plus difficile de renommer tout un module que de renommer une variable dans une fonction de quelques lignes
-- Il est possible que le terme soit directement utilisé dans une interface graphique et donc dans des traductions, ce qui augmente encore la difficulté de renommage
+- Il est possible que le terme soit utilisé dans une interface graphique et donc dans des traductions, ce qui augmente encore la difficulté de renommage
 - Si le terme se retrouve dans le langage ubiquiste, il peut y avoir une certaine inertie d'usage par l'équipe ou le client
 
 ### Qu'est-ce qu'un terme ?
 
 Déterminer efficacement le bon terme nécessite à ce stade de repréciser cette notion de "terme". 
 
-Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit de d'un concept, l'idéal serait que le terme :
+Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit d'un concept, l'idéal serait que le terme :
 - Ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
 - Puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait
 - Puisse se décliner facilement au pluriel 
@@ -70,13 +70,13 @@ Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les m
 En anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt être une recherche d'un nom commun.
 
 - *Shipping* -> ship() : assez naturel
-- *Discount* -> discount() : possible mais impossible de distinguer le nom du verbe
-- *Digital* -> digitalize() ou digitize() : risque de confusion, ne portent pas le même sens
-- *Unicorn* -> unicornize() : possible mais un peu forcé, pas très élégant
+- *Discount* -> discount() : impossible de distinguer le nom du verbe
+- *Digital* -> digitalize() ou digitize() : risque de confusion alors que ne portent pas le même sens
+- *Unicorn* -> unicornize() : le verbe est compréhensible mais il n'existe pas en anglais, pas très élégant
 
 ### Lister des candidats
 
-L'écriture de tests et de code nécessitant beaucoup de ressources mentales, ce travail de conceptualisation devrait être une tâche à part.
+L'écriture de tests et de code nécessite beaucoup de ressources mentales. Ce travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
 
 Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Voici ce qu'elle décrit sur le choix des termes:
 
@@ -113,46 +113,47 @@ Une approche intéressante pour l'évaluation du meilleur terme est de reprendre
 - Utiliser des termes qui ne soient pas trop équivoques, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" ("mot valise" en français ?) [^140]
 - Ne pas utiliser de termes qui sont réservés au développement ou à l'infrastructure comme *Factory* ou *Container*
 
-Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. Une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
+Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
-Par exemple, même s'il est difficile de généraliser, dans la taxonomie suivante *Transportation* > *Vehicle* > *Automobile* > *Car*, *Truck*, *Motorcycle* :
+Par exemple (et même s'il est difficile de généraliser le contexte), dans la taxonomie suivante *Transportation* > *Vehicle* > *Automobile* > *Car*, *Truck*, *Motorcycle* :
 - *Transportation* est un peu trop vague, 
 - *Vehicle* est un bon concept, 
 - *Automobile* pourrait aussi faire l'affaire (mais quid d'un camion ?)
-- *Car* est trop concret ou trop bas niveau
+- *Car* est trop concret / trop bas niveau
 
 ### Possibilité d'un glossaire neutre
 
 Lister tous ces critères permet de faire le constat que **tous les mots du dictionnaire anglais ne sont pas de bons candidats**. 
 
-En poussant cette réflexion plus loin, il devrait être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les quelques milliers (?) de termes acceptables. Il n'y aurait plus qu'à piocher dans ce glossaire.
+En poussant cette réflexion plus loin, il devrait être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire. Sur les 600.000 mots du dictionnaires d'Oxford, le registre courant de l'anglais représente entre 10.000 et 30.000 mots, peut être que la taille d'un tel glossaire tomberait à quelques milliers ?
 
 Cette idée est peut-être farfelue ou irréalisable ; il semble en tout cas que personne n'ait proposé la création d'un tel glossaire dans la littérature ou dans un projet ouvert. 
 
-Mais même s'il était possible de construire ce glossaire, le problème est de **trouver un mot à partir d'un autre, ou à partir d'une définition**. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonyme ou même un dictionnaire inversé.
+Mais même s'il était possible de construire ce glossaire, le problème est de **trouver un mot à partir d'un autre, ou à partir d'une définition**. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
 
 Si seulement il existait un outil qui permette de saisir une description et d'obtenir une liste de propositions de mots... 
 
 ### Pertinence des LLM
 
-Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de trouver des liens entre les mots. 
+Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de comprendre les critères linguistiques et les liens entre les mots. 
 
-Il suffit donc théoriquement de saisir une description initiale, les critères d'évaluation, et de demander une liste de propositions. 
+Il suffit donc théoriquement de saisir 1/ une description, 2/ les critères d'évaluation, et 3/ de demander une liste de propositions. 
 
-En partant de cette même description faite par le client : *contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple)*, voici un exemple sans doute un peu naïf de prompt avec ces 3 paragraphes :
+En partant du même exemple de description faite par le client qu'énoncé plus haut : *contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple)*, voici un exemple sans doute un peu naïf de prompt avec ces 3 paragraphes :
 
 ```
-Humain > Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
+Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
 
 Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 20 lettres, du registre courant, qui ne soit pas considéré comme un "weasel word". 
 
 Fais 5 propositions distinctes de termes triées par pertinence avec pour chacune le terme au singulier, au pluriel, quelques verbes anglais associés.
 ```
 
+La réponse obtenue est la suivante :
+
 ```
-LLM > 
 Cargo / Cargos / Load, Unload, Transport, Deliver
 Goods / Goods / Transport, Ship, Deliver, Haul
 Freight / Freights / Ship, Transport, Haul, Deliver
@@ -160,23 +161,26 @@ Load / Loads / Load, Unload, Transport, Carry
 Shipment / Shipments / Ship, Receive, Transport, Deliver
 ```
 
+A noter que la description joue beaucoup dans les propositions faites. A la question subsidiaire :
 ```
-Humain > Pourquoi pas "Payload" ?
-```
+Pourquoi pas "Payload" ?
+````
+
+La réponse du LLM est :
 
 ```
-LLM > "Payload" est un terme couramment utilisé pour désigner plutôt la charge utile transportée par un véhicule.
+"Payload" est un terme couramment utilisé pour désigner plutôt la charge utile transportée par un véhicule.
 ```
 
 Il y a surement la possibilité d'améliorer le prompt car les résultats restent imparfaits :
-- *Payload* : un bon candidat même si, en effet, souvent utilisé différemment 
 - *Goods* : identique au pluriel et au singulier et beaucoup trop général
 - *Load* : pas de différence avec le verbe et un peu trop connoté
 - *Freight* : plutôt dans le domaine aérien ?
 - *Shipment* comporte une intention d'expédition qui n'est pas pertinente ici
-- Reste *Cargo* !
+- *Payload* : pourrait être un bon candidat même si, en effet, souvent utilisé différemment 
+- Reste *Cargo*
 
-A noter qu'il est aussi possible de forcer le LLM à s'appuyer plutôt sur des données d'entrainement de type "codes sources". Le même prompt en remplaçant les critères linguistiques par des critères de bonne pratique de développement logiciel ("Ce terme doit respecter les bonnes pratiques de nommage dans le développement logiciel"). Mais les résultats semblent paradoxalement un peu moins bons.
+A noter qu'il doit aussi être possible de forcer le LLM à s'appuyer plutôt sur des données d'entrainement de type "codes sources". Le même prompt en remplaçant les critères linguistiques par des critères de bonne pratique de développement logiciel ("Ce terme doit respecter les bonnes pratiques de nommage dans le développement logiciel") semblent paradoxalement donner des résultats un peu moins bons.
 
 Tout ceci reste à explorer...
 
