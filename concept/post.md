@@ -198,7 +198,11 @@ Il y a encore quelques temps, je pensais que notre véritable rôle pourrait jus
 
 **Finalement, qu'en pensez-vous ?** Le nommage doit-il être aussi compliqué ? Y a-t-il d'autres outils / process ? Faut-il utiliser les LLM pour cela ? Quels sont les meilleurs prompts ?
 
-### Bibliographie
+---
+
+*Nommage, Concept, Abstraction, Ubiquitous language, Efficacité, Linguistique, LLM*
+
+© 2023 - Antoine ROLLAND - licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
 
 [^10]: Eric Evans. Domain Driven Design: Tackling Complexity in the Heart of Software. 2003
 
@@ -235,9 +239,3 @@ Il y a encore quelques temps, je pensais que notre véritable rôle pourrait jus
 [^150]: [Source Code Analysis and Natural Language Laboratory. Identifier Naming Structure Catalogue. 2022](https://github.com/SCANL/identifier_name_structure_catalogue#linguistic-antipatterns)
 
 [^160]: [Jake Ogden. Job market risk assessment: clean code vs. AI code. 2023](https://cleancoders.com/blog/2023-10-29-Job-Market-Risk-Assessment-Clean-Code-vs-AI-Code)
-
----
-
-Nommage, Concept, Abstraction, Ubiquitous language, Efficacité, Linguistique, LLM
-
-© 2023 - Antoine ROLLAND - licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
