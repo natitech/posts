@@ -4,9 +4,9 @@
 
 Le nommage est souvent présenté comme l'une des choses les plus difficile du développement logiciel. 
 
-Le client - ou celui qui exprime le besoin - communique dans sa langue une demande d'automatisation. Une partie du vocabulaire est utilisé dans le code. C'est le fameux "langage ubiquiste" [^10]. 
+Le client - ou celui qui exprime le besoin - communique dans sa langue une demande d'automatisation. Une partie de son vocabulaire est utilisé dans le code. C'est le fameux "langage ubiquiste" [^10]. 
 
-Ce vocabulaire initial est très souvent incomplet. D'une part, le client n'a pas toujours conscience de la complexité qui se cache derrière sa demande et de la nécessité d'introduire de nouveaux concepts. D'autre part, il faudra créer certaines abstractions dans le code et donc proposer de nouveaux termes.
+Ce vocabulaire est souvent incomplet. D'une part, le client n'a pas toujours conscience de la complexité qui se cache derrière sa demande et de la nécessité d'introduire de nouveaux concepts. D'autre part, il faudra créer certaines abstractions dans le code et donc proposer de nouveaux termes.
 
 En général, cette activité est plaisante. Il y a en effet quelque chose de très créatif à révéler une idée qui était cachée. Mais c'est aussi une activité assez intense, avec parfois un cumul de plusieurs heures passées à tâtonner. 
 
@@ -28,11 +28,11 @@ Quelles que soient les méthodes utilisées, il parait imprudent de ne pas tenir
 
 ### Homogénéité et syntaxe
 
-Pour améliorer le nommage, il existe de nombreuses recommandations de syntaxe. On y trouve par exemple des arbitrages entre camelCase et under_score (ou snake_case). 
+Pour améliorer le nommage, il existe de nombreuses recommandations de syntaxe. On y trouve par exemple des arbitrages entre camelCase et snake_case. 
 
-Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation under_score demande moins d'effort en lecture mais est plus imprécise que le camelCase [^80].
+Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation snake_case demande moins d'effort en lecture mais est plus imprécise que le camelCase [^80].
 
-Une autre recommandation intéressante est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
+Un autre exemple intéressant de convention est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
 
 Globalement, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
 
@@ -53,7 +53,7 @@ if colis.isPret()               if colis.isReady()
 
 ### Niveau d'abstraction et renommage
 
-Il n'est pas toujours nécessaire de passer trop de temps à trouver un bon terme. En fait, **le temps investi devrait être proportionnel au niveau d'abstraction**. 
+Globalement, il n'est pas nécessaire de passer trop de temps à trouver un bon terme. En fait, **le temps investi devrait être proportionnel au niveau d'abstraction**. 
 
 ![Langages et niveau d'abstraction](img/languages.svg)
 
@@ -63,7 +63,7 @@ En effet, les caractéristiques d'un code de bas niveau d'abstraction font que l
 - Il est plus rarement lu car lorsque nous lisons du code, nous ne rentrons pas dans tous les détails d'implémentation, nous restons le plus souvent assez haut dans l'abstraction avant de creuser : donc les termes choisis auront moins d'impact sur la lisibilité globale du projet
 - Il faut passer par le code de haut niveau avant de le lire : tout ce qui est lu avant va donc aider à contextualiser, et donc le nommage est moins critique
 
-Au contraire, l'effort de nommage doit donc se concentrer sur le haut niveau d'abstraction car :
+Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstraction car :
 - Beaucoup de termes seront forgés à partir de là
 - Il peut être plus difficile de renommer tout un module que de renommer une variable dans une fonction de quelques lignes
 - Il est possible que le terme soit utilisé dans une interface graphique et donc dans des traductions, ce qui augmente encore la difficulté de renommage
@@ -87,7 +87,7 @@ En anglais, il est a priori plus simple de transformer un nom commun en verbe qu
 
 ### Lister des candidats
 
-L'écriture de tests et de code nécessite beaucoup de ressources mentales. Ce travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
+L'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
 
 Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Voici ce qu'elle décrit sur le choix des termes:
 
@@ -112,17 +112,17 @@ Natif anglais ou non, il faudra dans un premier temps se faire une idée précis
 
 En effet, les nuances de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
 
+Il est déjà possible d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" [^140]. Il est assi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
+
 Mais il existe d'autres critères que le sens.
  
-### Évaluer le meilleur terme
+### Évaluer le meilleur terme 
 
 Une approche intéressante pour l'évaluation du meilleur terme est de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (méthode) 
 - Puisse se décliner au pluriel sans efforts de compréhension. Est ce que *Quantum* et *Quanta* sont acceptables pour désigner une ou plusieurs quantités ?
 - Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?). Est ce que *Counterproductive* est acceptable ?
 - Soit dans le registre courant (par opposition à soutenu, familier ou même littéraire) : les estimations sont assez variées mais, comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* est préférable à *Travel* ?
-- Ne soit pas trop équivoque, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" ("mot valise" en français ?) [^140]
-- Ne soit pas utilisé dans les patrons de développement (comme *Factory*) ou même dans l'infrastructure (comme *Container*)
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
