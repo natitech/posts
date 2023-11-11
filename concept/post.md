@@ -8,7 +8,7 @@ Le client - ou celui qui exprime le besoin - communique dans sa langue une deman
 
 Ce vocabulaire initial est très souvent incomplet. D'une part, le client n'a pas toujours conscience de la complexité qui se cache derrière sa demande et de la nécessité d'introduire de nouveaux concepts. D'autre part, il faudra créer certaines abstractions dans le code et donc proposer de nouveaux termes.
 
-En général, cette activité est plaisante. Il y a en effet quelque chose de très créatif à révéler une idée qui était cachée. Mais c'est aussi une activité assez intense, avec parfois plusieurs heures passées à tâtonner. 
+En général, cette activité est plaisante. Il y a en effet quelque chose de très créatif à révéler une idée qui était cachée. Mais c'est aussi une activité assez intense, avec parfois un cumul de plusieurs heures passées à tâtonner. 
 
 Se posent alors les questions suivantes : ce temps passé est-il vraiment nécessaire dans tous les cas ? Est ce qu'il est possible d'optimiser cette recherche et de trouver efficacement le bon terme ?
 
@@ -20,13 +20,13 @@ Une très grande partie du temps de développement est consacré à lire du code
 
 Trouver les bons termes est donc faire preuve d'empathie pour tous les lecteurs du code. C'est même ainsi qu'est rendu possible le travail en équipe. 
 
-Même en étant seul, quelques années (ou quelques mois...) suffisent à être étranger à son propre code. Or, la maintenance d'un projet représente généralement 70% du cout total du projet [^50]. 
+Même en étant seul, quelques années (ou quelques mois...) suffisent à devenir étranger à son propre code. Or, la maintenance d'un projet représente généralement 70% du cout total du projet [^50]. 
 
 Certaines études essayent de creuser d'avantage cette notion de lisibilité en l'associant à la notion de charge cognitive. Il devient alors possible de quantifier une amélioration ou une détérioration de lisibilité en mesurant l'activité cérébrale ou la précision et le temps de réponse à des tests de compréhension de code [^60] [^61]. 
 
 Quelles que soient les méthodes utilisées, il parait imprudent de ne pas tenir compte de la lisibilité et du nommage tant les études convergent [^70].
 
-### Homogénéité, syntaxe et langue
+### Homogénéité et syntaxe
 
 Pour améliorer le nommage, il existe de nombreuses recommandations de syntaxe. On y trouve par exemple des arbitrages entre camelCase et under_score (ou snake_case). 
 
@@ -38,7 +38,18 @@ Globalement, dans toutes ces recommandations, **le plus important est l'homogén
 
 L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions.
 
-Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d'utiliser des termes quasi-exclusivement anglais**, y compris pour un domaine métier qui serait dans une autre langue. Le travail de compréhension du code est déjà assez dur, inutile donc de mélanger deux langues. 
+### Homogénéité et langage
+
+Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d'utiliser des termes quasi-exclusivement anglais**, y compris pour un domaine métier qui serait dans une autre langue :
+- Le travail de compréhension du code est déjà assez dur, inutile donc de mélanger deux langues
+- Un nouveau contributeur ne saura pas non plus quand utiliser une langue ou l'autre
+- Aucune étude comparative ne permet de l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation et plus concis
+
+```
+//En franglais                  //En anglais
+if colis.isPret()               if colis.isReady()
+    return colis.getContenu()       return colis.getContent()    
+```
 
 ### Niveau d'abstraction et renommage
 
@@ -107,11 +118,11 @@ Mais il existe d'autres critères que le sens.
 
 Une approche intéressante pour l'évaluation du meilleur terme est de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (méthode) 
-- Puisse se décliner au pluriel sans efforts de compréhension
-- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?)
-- Utiliser des termes dans le registre courant (par opposition à soutenu ou vulgaire)
-- Utiliser des termes qui ne soient pas trop équivoques, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" ("mot valise" en français ?) [^140]
-- Ne pas utiliser de termes qui sont réservés au développement ou à l'infrastructure comme *Factory* ou *Container*
+- Puisse se décliner au pluriel sans efforts de compréhension. Est ce que *Quantum* et *Quanta* sont acceptables pour désigner une ou plusieurs quantités ?
+- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?). Est ce que *Counterproductive* est acceptable ?
+- Soit dans le registre courant (par opposition à soutenu, familier ou même littéraire) : les estimations sont assez variées mais, comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* est préférable à *Travel* ?
+- Ne soit pas trop équivoque, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" ("mot valise" en français ?) [^140]
+- Ne soit pas utilisé dans les patrons de développement (comme *Factory*) ou même dans l'infrastructure (comme *Container*)
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
@@ -127,11 +138,11 @@ Par exemple (et même s'il est difficile de généraliser le contexte), dans la 
 
 Lister tous ces critères permet de faire le constat que **tous les mots du dictionnaire anglais ne sont pas de bons candidats**. 
 
-En poussant cette réflexion plus loin, il devrait être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire. Sur les 600.000 mots du dictionnaires d'Oxford, le registre courant de l'anglais représente entre 10.000 et 30.000 mots, peut être que la taille d'un tel glossaire tomberait à quelques milliers ?
+Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire de quelques milliers de mots (?).
 
 Cette idée est peut-être farfelue ou irréalisable ; il semble en tout cas que personne n'ait proposé la création d'un tel glossaire dans la littérature ou dans un projet ouvert. 
 
-Mais même s'il était possible de construire ce glossaire, le problème est de **trouver un mot à partir d'un autre, ou à partir d'une définition**. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
+Mais même s'il était possible de le construire, le problème est de **trouver un mot à partir d'un autre, ou à partir d'une définition**. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
 
 Si seulement il existait un outil qui permette de saisir une description et d'obtenir une liste de propositions de mots... 
 
@@ -146,9 +157,9 @@ En partant du même exemple de description faite par le client qu'énoncé plus 
 ```
 Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
 
-Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 20 lettres, du registre courant, qui ne soit pas considéré comme un "weasel word". 
+Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 20 lettres, du registre courant, qui ne soit pas considéré comme ambigu. 
 
-Fais 5 propositions distinctes de termes triées par pertinence avec pour chacune le terme au singulier, au pluriel, quelques verbes anglais associés.
+Fais 5 propositions distinctes de termes triées par usage dans la langue anglaise avec pour chacune le terme au singulier, au pluriel et quelques verbes anglais associés.
 ```
 
 La réponse obtenue est la suivante :
@@ -161,7 +172,7 @@ Load / Loads / Load, Unload, Transport, Carry
 Shipment / Shipments / Ship, Receive, Transport, Deliver
 ```
 
-A noter que la description joue beaucoup dans les propositions faites. A la question subsidiaire :
+A noter que le premier paragraphe de description joue beaucoup dans les propositions faites. A la question subsidiaire :
 ```
 Pourquoi pas "Payload" ?
 ````
@@ -190,11 +201,11 @@ Finalement, le nommage reste difficile !
 
 Pouvoir modifier le code sereinement permet d'atténuer les effets d'un mauvais nommage. Mais l'introduction de certains concepts doivent quand même faire l'objet d'une vraie réflexion en amont. 
 
-Il existe quelques critères qui permettent d'être plus efficace à ce moment-là. Il est aussi possible que la solution soit un bon usage des LLM.
+Il existe quelques critères notamment linguistiques qui permettent d'être plus efficace à ce moment-là. Il est aussi possible que la solution soit un bon usage des LLM.
 
 A ce sujet. Comme dans beaucoup d'autres métiers, l'émergence des LLM est une invitation à l'introspection, à la réflexion en profondeur du rôle d'un ingénieur logiciel :
 - Certains proposent que les tests restent la prérogative des humains et que la machine s'occupe d'écrire le code de production ;
-- D'autres soulignent que les LLM sont incapables d'écrire du code propre notamment parce que les LLM sont incapables de faire du Test Driven Development :"Writing tests is typically a task performed by human developers to ensure the correctness and robustness of their software." [^160]
+- D'autres soulignent que les LLM sont incapables d'écrire du code propre notamment parce que les LLM sont incapables de faire du Test Driven Development. De l'aveu même de la machine (!), "Writing tests is typically a task performed by human developers to ensure the correctness and robustness of their software." [^160]
 
 Personnellement, il y a encore quelques temps, je pensais que notre véritable rôle pourrait justement être de rendre lisible la complexité par le nommage et que notre imagination produirait de meilleurs résultats. Mais je n'en suis désormais plus si sûr... A moins d'écrire un logiciel extrêmement original, la plupart du temps nous cherchons à trouver des termes dont l'usage n'est pas confidentiel. Il parait donc légitime de demander à un LLM. Il peut être regrettable d'utiliser une langue ainsi appauvrie et consensuelle mais il faut probablement l'assumer dans ce cas.
 
