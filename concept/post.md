@@ -149,7 +149,7 @@ En partant du même exemple de description faite par le client qu'énoncé plus 
 ```
 Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
 
-Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 18 lettres, du registre courant, qui ne soit pas considéré comme ambigu. 
+Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 15 lettres, du registre courant, qui ne soit pas considéré comme ambigu. 
 
 Fais 5 propositions distinctes de termes triées par usage dans la langue anglaise avec pour chacune le terme au singulier, au pluriel et quelques verbes anglais associés.
 ```
