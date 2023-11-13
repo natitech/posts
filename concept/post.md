@@ -117,14 +117,14 @@ En effet, les différences de sens sont parfois subtiles : par exemple, quelles 
 Comme autre critère que le sens, il est possible de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (pour en faire une méthode) 
 - Puisse se décliner au pluriel de manière claire. Vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
-- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 18 lettres (arbitraire mais raisonnable ?). 
+- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 15 lettres. C'est assez arbitraire mais il n'y a de toute façon plus beaucoup de mots à partir de 15 lettres [^131]. D'autre part, même avec 14 lettres, *Transportation* peut devenir par exemple *TransportationStrategyImplementation*.
 - Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* peut être préférable à *Travel* ?
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
-Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car*, *Truck*, *Motorcycle*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Est ce que *Car* devrait être généralisé tout de suite à *Vehicle* pour le jour où le concept intégre une camionette (avec le risque de [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)) ?
+Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Généraliser tout de suite *Car* en *Vehicle* est en revanche loin d'être évident ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)), mais trouver le concept de *Car* devrait être immédiat.
 
 ### Possibilité d'un glossaire neutre
 
@@ -238,6 +238,8 @@ Personnellement, il y a encore quelques temps, je pensais que notre véritable r
 [^120]: [J. C. Hofmeister, J. Siegmund, and D. V. Holt. Shorter Identifier Names Take Longer to Comprehend. 2019](https://www.infosun.fim.uni-passau.de/publications/docs/HoSeHo17.pdf)
 
 [^130]: D. Binkley, D. Lawrie, S. Maex, and C. Morrell. Identifier length and limited programmer memory. 2009
+
+[^131]: [Reginal Smith. Distinct word length frequencies: distributions and symbol entropies. 2012](https://arxiv.org/pdf/1207.2334.pdf)
 
 [^140]: [Vladimir Khorikov. Ubiquitous Language and Naming. 2017](https://enterprisecraftsmanship.com/posts/ubiquitous-language-naming/)
 
