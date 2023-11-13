@@ -124,6 +124,8 @@ Pour aller encore un peu plus loin dans cette approche purement linguistique, il
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
+Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car*, *Truck*, *Motorcycle*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Est ce que *Car* devrait être généralisé tout de suite à *Vehicle* pour le jour où le concept intégre une camionette (avec le risque de [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)) ?
+
 ### Possibilité d'un glossaire neutre
 
 Lister tous ces critères permet de faire le constat que **tous les mots du dictionnaire anglais ne sont pas de bons candidats**. 
