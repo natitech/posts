@@ -73,7 +73,7 @@ Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstra
 
 A ce stade, il devient nécessaire de repréciser cette notion de "terme".
 
-Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit d'un concept, l'idéal serait que le terme :
+Une recommandation assez classique [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit d'un concept, l'idéal serait que le terme :
 - Ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
 - Puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait
 - Puisse se décliner facilement au pluriel 
