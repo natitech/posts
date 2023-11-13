@@ -6,7 +6,7 @@ Le nommage est souvent présenté comme l'une des choses les plus difficile du d
 
 Le client - ou celui qui exprime le besoin - communique dans sa langue une demande d'automatisation. Une partie de son vocabulaire est utilisé dans le code. C'est le fameux "langage ubiquiste" [^10]. 
 
-Ce vocabulaire est souvent incomplet. D'une part, le client n'a pas toujours conscience de la complexité qui se cache derrière sa demande et de la nécessité d'introduire de nouveaux concepts. D'autre part, il faudra créer certaines abstractions dans le code et donc proposer de nouveaux termes.
+Ce vocabulaire est souvent incomplet. D'une part, le client n'a pas toujours conscience de la complexité qui se cache derrière sa demande et de la nécessité d'**introduire de nouveaux concepts**. D'autre part, il faudra **créer des abstractions dans le code** et donc proposer de nouveaux termes.
 
 En général, cette activité est plaisante. Il y a en effet quelque chose de très créatif à révéler une idée qui était cachée. Mais c'est aussi une activité assez intense, avec parfois un cumul de plusieurs heures passées à tâtonner. 
 
@@ -71,7 +71,7 @@ Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstra
 
 ### Qu'est-ce qu'un terme ?
 
-Déterminer efficacement le bon terme nécessite à ce stade de repréciser cette notion de "terme". 
+A ce stade, il devient nécessaire de repréciser cette notion de "terme".
 
 Une recommandation assez consensuelle [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit d'un concept, l'idéal serait que le terme :
 - Ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
@@ -112,7 +112,7 @@ Natif anglais ou non, il faudra dans un premier temps se faire une idée précis
 
 En effet, les nuances de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
 
-Il est déjà possible d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data*, on parle en anglais de "weasel words" [^140]. Il est assi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
+Il est déjà possible d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
 
 Mais il existe d'autres critères que le sens.
  
@@ -122,7 +122,7 @@ Une approche intéressante pour l'évaluation du meilleur terme est de reprendre
 - Puisse se décliner en verbe (méthode) 
 - Puisse se décliner au pluriel sans efforts de compréhension. Est ce que *Quantum* et *Quanta* sont acceptables pour désigner une ou plusieurs quantités ?
 - Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?). Est ce que *Counterproductive* est acceptable ?
-- Soit dans le registre courant (par opposition à soutenu, familier ou même littéraire) : les estimations sont assez variées mais, comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* est préférable à *Travel* ?
+- Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* est préférable à *Travel* ?
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
