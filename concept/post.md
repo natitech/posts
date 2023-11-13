@@ -93,9 +93,7 @@ Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgaris�
 
 > Often choosing the right words is straightforward, with one specific word being the obvious choice because it is used in the domain of the code or has been used across the codebase. However, in his experiments Feitelson observed that there were also **many cases in which for at least one of the words many different contending options were suggested by participants**. Such diversity can cause problems when developers become confused about whether synonyms mean the same thing or represent nuanced differences.
 
-Une idée assez simple pour trouver les candidats est d'utiliser un dictionnaire de synonymes sur une ou plusieurs propositions initiales de noms communs. 
-
-Il est possible de partir directement de l'anglais ou de la langue du métier. Dans ce cas, il est intéressant d'obtenir des suggestions par traduction et même par rétrotraduction. L'objectif est d'arriver à une liste de propositions pertinentes en anglais. 
+Pour trouver les candidats, il suffit tout simplement d'utiliser un dictionnaire de synonymes sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir des suggestions par traduction et même par rétrotraduction. 
 
 ![Process de recherche d'un terme](img/process.svg)
 
@@ -106,33 +104,25 @@ Par exemple :
 - Quelques synonymes : *affrètement*, *charge*
 - Les traductions donnent : *loading*, *freight*, *chartering*, *cargo*, *shipment*, *payload*
 
-Natif anglais ou non, il faudra dans un premier temps se faire une idée précise des **nuances de sens**. Comme le dit Sean Glatch dans ses conseils d'écriture à destination des écrivains : 
+Globalement, il est recommandé d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
+
+### Évaluer le meilleur terme 
+
+Natif anglais ou non, il faudra ensuite se faire une idée précise des **nuances de sens**. Comme lu récemment dans une série de conseils à destination des écrivains : 
 
 > Finding the word that packs the most punch requires both a great vocabulary and a great understanding of the nuances in English. [^111]
 
-En effet, les nuances de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
+En effet, les différences de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
 
-Il est déjà possible d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
-
-Mais il existe d'autres critères que le sens.
- 
-### Évaluer le meilleur terme 
-
-Une approche intéressante pour l'évaluation du meilleur terme est de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
-- Puisse se décliner en verbe (méthode) 
-- Puisse se décliner au pluriel sans efforts de compréhension. Est ce que *Quantum* et *Quanta* sont acceptables pour désigner une ou plusieurs quantités ?
-- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 20 lettres (arbitraire mais raisonnable ?). Est ce que *Counterproductive* est acceptable ?
-- Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* est préférable à *Travel* ?
+Comme autre critère que le sens, il est possible de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
+- Puisse se décliner en verbe (pour en faire une méthode) 
+- Puisse se décliner au pluriel de manière claire. Vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
+- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 18 lettres (arbitraire mais raisonnable ?). 
+- Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* peut être préférable à *Travel* ?
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
-
-Par exemple (et même s'il est difficile de généraliser le contexte), dans la taxonomie suivante *Transportation* > *Vehicle* > *Automobile* > *Car*, *Truck*, *Motorcycle* :
-- *Transportation* est un peu trop vague, 
-- *Vehicle* est un bon concept, 
-- *Automobile* pourrait aussi faire l'affaire (mais quid d'un camion ?)
-- *Car* est trop concret / trop bas niveau
 
 ### Possibilité d'un glossaire neutre
 
@@ -157,12 +147,12 @@ En partant du même exemple de description faite par le client qu'énoncé plus 
 ```
 Je recherche un terme en anglais qui désigne le contenu d'un camion de livraison (sable, fut d'huile, ou métaux à recycler par exemple). 
 
-Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 20 lettres, du registre courant, qui ne soit pas considéré comme ambigu. 
+Ce terme doit avoir les caractéristiques suivantes : un seul mot, nom commun, hyperonyme, de plus de 3 lettres, de moins de 18 lettres, du registre courant, qui ne soit pas considéré comme ambigu. 
 
 Fais 5 propositions distinctes de termes triées par usage dans la langue anglaise avec pour chacune le terme au singulier, au pluriel et quelques verbes anglais associés.
 ```
 
-La réponse obtenue est la suivante :
+La réponse obtenue sur ChatGPT (v3.5, octobre 2023) est la suivante :
 
 ```
 Cargo / Cargos / Load, Unload, Transport, Deliver
