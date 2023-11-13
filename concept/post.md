@@ -2,7 +2,7 @@
 
 *Pourquoi, quand et comment être efficace lors du nommage*
 
-Le nommage est souvent présenté comme l'une des choses les plus difficile du développement logiciel. 
+Le nommage est souvent présenté comme l'une des choses les plus difficiles du développement logiciel.
 
 Le client - ou celui qui exprime le besoin - communique dans sa langue une demande d'automatisation. Une partie de son vocabulaire est utilisé dans le code. C'est le fameux "langage ubiquiste" [^10]. 
 
@@ -43,7 +43,7 @@ L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliq
 Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d'utiliser des termes quasi-exclusivement anglais**, y compris pour un domaine métier qui serait dans une autre langue :
 - Le travail de compréhension du code est déjà assez dur, inutile donc de mélanger deux langues
 - Un nouveau contributeur ne saura pas non plus quand utiliser une langue ou l'autre
-- Aucune étude comparative ne permet de l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation et plus concis
+- Aucune étude comparative ne permet de l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation car plus concis
 
 ```
 //En franglais                  //En anglais
@@ -59,15 +59,15 @@ Globalement, il n'est pas nécessaire de passer trop de temps à trouver un bon 
 
 En effet, les caractéristiques d'un code de bas niveau d'abstraction font que l'impact d'un mauvais nommage est limité :
 - Il est plus concret : donc souvent plus facile à nommer
-- Il a une portée plus limitée, généralement encapsulé, généralement couplage afférent plus bas : donc plus facile à REnommer
+- Il a une portée plus limitée, généralement encapsulé, généralement couplage afférent plus bas : donc plus facile à renommer
 - Il est plus rarement lu car lorsque nous lisons du code, nous ne rentrons pas dans tous les détails d'implémentation, nous restons le plus souvent assez haut dans l'abstraction avant de creuser : donc les termes choisis auront moins d'impact sur la lisibilité globale du projet
 - Il faut passer par le code de haut niveau avant de le lire : tout ce qui est lu avant va donc aider à contextualiser, et donc le nommage est moins critique
 
 Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstraction car :
-- Beaucoup de termes seront forgés à partir de là
+- Beaucoup d'autres termes seront forgés à partir de là
 - Il peut être plus difficile de renommer tout un module que de renommer une variable dans une fonction de quelques lignes
 - Il est possible que le terme soit utilisé dans une interface graphique et donc dans des traductions, ce qui augmente encore la difficulté de renommage
-- Si le terme se retrouve dans le langage ubiquiste, il peut y avoir une certaine inertie d'usage par l'équipe ou le client
+- Si le terme se retrouve dans le langage ubiquiste [^10], il peut y avoir une certaine inertie d'usage par l'équipe ou le client
 
 ### Qu'est-ce qu'un terme ?
 
