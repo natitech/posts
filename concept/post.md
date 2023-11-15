@@ -82,6 +82,7 @@ Une recommandation assez classique [^20] est d'utiliser des verbes pour les mét
 
 En anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt être une recherche d'un nom commun.
 
+Quelques exemples de déclinaisons nom -> verbe :
 - *Shipping* -> ship() : assez naturel
 - *Discount* -> discount() : impossible de distinguer le nom du verbe
 - *Digital* -> digitalize() ou digitize() : risque de confusion alors que ne portent pas le même sens
@@ -89,13 +90,13 @@ En anglais, il est a priori plus simple de transformer un nom commun en verbe qu
 
 ### Lister des candidats
 
-L'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
+Avant tout, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
 
-Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Voici ce qu'elle décrit sur le choix des termes:
+Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Pour faire simple, il s'agit de sélectionner les concepts, de trouver les termes et de les associer (en suivant un moule). Voici ce qu'elle décrit sur le choix des termes:
 
 > Often choosing the right words is straightforward, with one specific word being the obvious choice because it is used in the domain of the code or has been used across the codebase. However, in his experiments Feitelson observed that there were also **many cases in which for at least one of the words many different contending options were suggested by participants**. Such diversity can cause problems when developers become confused about whether synonyms mean the same thing or represent nuanced differences.
 
-Pour trouver les candidats, il suffit tout simplement d'utiliser un dictionnaire de synonymes sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir des suggestions par traduction et même par rétrotraduction. 
+Pour trouver les candidats, il est tout simplement possible d'**utiliser un dictionnaire de synonymes** sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir d'**autres suggestions par traduction et même par rétrotraduction**. 
 
 ![Process de recherche d'un terme](img/process.svg)
 
@@ -126,7 +127,7 @@ Pour aller encore un peu plus loin dans cette approche purement linguistique, il
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
-Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Sur cet exemple, à partir de *Car* et pour la suite de la taxonomie, il ne s'agit plus tellement de concepts ou d'abstractions dificilles à trouver. Si le métier ne parle que de *voiture*, le terme devrait être *Car* et non *Vehicle* ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)). 
+Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Sur cet exemple, à partir de *Car* et pour la suite de la taxonomie, il ne s'agit plus tellement de concepts ou d'abstractions dificilles à trouver. Et si le métier ne parle que de *voiture*, le terme devrait être *Car* et non *Vehicle* ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)). 
 
 ### Possibilité d'un glossaire neutre
 
