@@ -45,6 +45,8 @@ Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d
 - Un nouveau contributeur ne saura pas non plus quand utiliser une langue ou l'autre
 - Aucune étude comparative ne semble pouvoir l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation car plus concis
 
+Un exemple qui ne prouve rien mais qui permet de se faire une idée de ses préférences personnelles :
+
 ```
 //En franglais                                 //En anglais
 if colis.isTropVolumineux(modeDeTransport)     if package.isTooLarge(shipping)
