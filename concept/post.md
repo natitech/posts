@@ -77,12 +77,10 @@ A ce stade, il devient nécessaire de repréciser cette notion de "terme".
 
 Une recommandation assez classique [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme le terme doit désigner un concept, l'idéal serait :
 - Qu'il ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
-- Qu'il puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait
-- Qu'il puisse se décliner facilement au pluriel 
+- Qu'il puisse se décliner facilement au pluriel ; vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
+- Qu'il puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait ; en anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt porter sur un nom commun
 
-En anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt être une recherche d'un nom commun.
-
-Quelques exemples de déclinaisons nom -> verbe :
+Quelques exemples de déclinaisons nom -> verbe plus ou moins heureuses :
 - *Shipping* -> ship() : assez naturel
 - *Discount* -> discount() : impossible de distinguer le nom du verbe
 - *Digital* -> digitalize() ou digitize() : risque de confusion alors que ne portent pas le même sens
@@ -118,8 +116,7 @@ Natif anglais ou non, il faudra ensuite se faire une idée précise des **nuance
 En effet, les différences de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
 
 Comme autre critère que le sens, il est possible de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
-- Puisse se décliner en verbe (pour en faire une méthode) 
-- Puisse se décliner au pluriel de manière claire. Vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
+- Puisse se décliner en verbe (pour en faire une méthode) et au pluriel de manière claire (vu précédemment)
 - Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 15 lettres. Cette dernière limite est assez arbitraire mais il n'y a de toute façon plus beaucoup de mots à partir de 15 lettres [^131]. D'autre part, même avec 14 lettres, *Transportation* peut devenir par exemple *TransportationStrategyImplementation*, ce qui fait déjà assez long.
 - Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* peut être préférable à *Travel* ?
 
