@@ -53,15 +53,17 @@ if colis.isPret()               if colis.isReady()
 
 ### Niveau d'abstraction et renommage
 
-Globalement, il n'est pas nécessaire de passer trop de temps à trouver un bon terme. En fait, **le temps investi devrait être proportionnel au niveau d'abstraction**. 
+Après tous ces rappels, il faut d'abord examiner les situations où le temps passé à chercher un terme est vraiment nécessaire.
 
-![Langages et niveau d'abstraction](img/languages.svg)
+Et il s'avère que **le temps investi devrait être proportionnel au niveau d'abstraction**. 
 
 En effet, les caractéristiques d'un code de bas niveau d'abstraction font que l'impact d'un mauvais nommage est limité :
-- Il est plus concret : donc souvent plus facile à nommer
-- Il a une portée plus limitée, généralement encapsulé, généralement couplage afférent plus bas : donc plus facile à renommer
-- Il est plus rarement lu car lorsque nous lisons du code, nous ne rentrons pas dans tous les détails d'implémentation, nous restons le plus souvent assez haut dans l'abstraction avant de creuser : donc les termes choisis auront moins d'impact sur la lisibilité globale du projet
-- Il faut passer par le code de haut niveau avant de le lire : tout ce qui est lu avant va donc aider à contextualiser, et donc le nommage est moins critique
+- Il est précisémment moins abstrait : donc souvent plus facile à nommer
+- Il a une portée plus limitée (ou un couplage afférent plus bas) : donc plus facile à *re*nommer
+- Il est plus rarement lu car, très souvent, le lecteur du code ne rentre pas dans tous les détails d'implémentation et reste le plus souvent assez haut dans l'abstraction avant de creuser : donc le nommage aura moins d'impact sur la lisibilité globale du projet
+- Dans le prolongement de l'idée précédente, tout ce qui est lu avant d'arriver au code de bas niveau va aider à contextualiser : donc le nommage est moins important
+
+![Langages et niveau d'abstraction](img/languages.svg)
 
 Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstraction car :
 - Beaucoup d'autres termes seront forgés à partir de là
@@ -73,10 +75,10 @@ Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstra
 
 A ce stade, il devient nécessaire de repréciser cette notion de "terme".
 
-Une recommandation assez classique [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme il s'agit d'un concept, l'idéal serait que le terme :
-- Ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
-- Puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait
-- Puisse se décliner facilement au pluriel 
+Une recommandation assez classique [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme le terme doit désigner un concept, l'idéal serait :
+- Qu'il ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
+- Qu'il puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait
+- Qu'il puisse se décliner facilement au pluriel 
 
 En anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt être une recherche d'un nom commun.
 
@@ -117,14 +119,14 @@ En effet, les différences de sens sont parfois subtiles : par exemple, quelles 
 Comme autre critère que le sens, il est possible de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (pour en faire une méthode) 
 - Puisse se décliner au pluriel de manière claire. Vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
-- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 15 lettres. C'est assez arbitraire mais il n'y a de toute façon plus beaucoup de mots à partir de 15 lettres [^131]. D'autre part, même avec 14 lettres, *Transportation* peut devenir par exemple *TransportationStrategyImplementation*.
+- Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 15 lettres. Cette dernière limite est assez arbitraire mais il n'y a de toute façon plus beaucoup de mots à partir de 15 lettres [^131]. D'autre part, même avec 14 lettres, *Transportation* peut devenir par exemple *TransportationStrategyImplementation*, ce qui fait déjà assez long.
 - Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* peut être préférable à *Travel* ?
 
 Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
-Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Généraliser tout de suite *Car* en *Vehicle* est en revanche loin d'être évident ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)), mais trouver le concept de *Car* devrait être immédiat.
+Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Sur cet exemple, à partir de *Car* et pour la suite de la taxonomie, il ne s'agit plus tellement de concepts ou d'abstractions dificilles à trouver. Si le métier ne parle que de *voiture*, le terme devrait être *Car* et non *Vehicle* ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)). 
 
 ### Possibilité d'un glossaire neutre
 
@@ -140,7 +142,9 @@ Si seulement il existait un outil qui permette de saisir une description et d'ob
 
 ### Pertinence des LLM
 
-Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal**. L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. Et ces modèles sont intrinsèquement capables de comprendre les critères linguistiques et les liens entre les mots. 
+Et oui, **un [LLM (Large Language Model)](https://en.wikipedia.org/wiki/Large_language_model) semble être l'outil idéal** :
+- L'interaction avec un LLM est généralement sous la forme d'un agent conversationnel ou d'un prompt, ce qui correspond tout à fait au besoin. 
+- Ces modèles sont intrinsèquement capables de comprendre les critères linguistiques et les liens entre les mots. 
 
 Il suffit donc théoriquement de saisir 1/ une description, 2/ les critères d'évaluation, et 3/ de demander une liste de propositions. 
 
