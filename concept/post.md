@@ -92,11 +92,15 @@ Quelques exemples de déclinaisons nom -> verbe plus ou moins heureuses :
 
 Avant tout, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
 
-Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Pour faire simple, il s'agit de sélectionner les concepts, de trouver les termes et de les associer (en suivant un moule). Voici ce qu'elle décrit sur le choix des termes:
+Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Pour faire simple, il s'agit de sélectionner les concepts, de trouver les termes et de les associer en suivant un moule. 
+
+Voici ce que Felienne Hermans décrit sur le choix des termes:
 
 > Often choosing the right words is straightforward, with one specific word being the obvious choice because it is used in the domain of the code or has been used across the codebase. However, in his experiments Feitelson observed that there were also **many cases in which for at least one of the words many different contending options were suggested by participants**. Such diversity can cause problems when developers become confused about whether synonyms mean the same thing or represent nuanced differences.
 
-Pour trouver les candidats, il est tout simplement possible d'**utiliser un dictionnaire de synonymes** sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir d'**autres suggestions par traduction et même par rétrotraduction**. 
+Face au besoin de trouver un terme pour un concept qui n'est pas évident, de multiples propositions sont souvent possibles. Il est donc intéressant de faire aussi ce travail au moins à 2 (par exemple dans une session de pair programming) ou même via un brainstorming en équipe.
+
+Une fois le moment trouvé et les participants réunis, il est tout simplement possible d'**utiliser un dictionnaire de synonymes** sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir d'**autres suggestions par traduction et même par rétrotraduction**. 
 
 ![Process de recherche d'un terme](img/process.svg)
 
@@ -107,7 +111,7 @@ Par exemple :
 - Quelques synonymes : *affrètement*, *charge*
 - Les traductions donnent : *loading*, *freight*, *chartering*, *cargo*, *shipment*, *payload*
 
-Globalement, il est recommandé d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de développement (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
+Globalement, il est recommandé d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de conception (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
 
 ### Évaluer le meilleur terme 
 
@@ -115,7 +119,7 @@ Natif anglais ou non, il faudra ensuite se faire une idée précise des **nuance
 
 > Finding the word that packs the most punch requires both a great vocabulary and a great understanding of the nuances in English. [^111]
 
-En effet, les différences de sens sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
+En effet, les différences sont parfois subtiles : par exemple, quelles différences entre *Voucher*, *Coupon*, *Discount* ? 
 
 Comme autre critère que le sens, il est possible de reprendre les **critères linguistiques** déjà énoncés et de les compléter. Il faut que le terme :
 - Puisse se décliner en verbe (pour en faire une méthode) et au pluriel de manière claire (vu précédemment)
@@ -126,17 +130,17 @@ Pour aller encore un peu plus loin dans cette approche purement linguistique, il
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
-Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Sur cet exemple, à partir de *Car* et pour la suite de la taxonomie, il ne s'agit plus tellement de concepts ou d'abstractions dificilles à trouver. Et si le métier ne parle que de *voiture*, le terme devrait être *Car* et non *Vehicle* ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)). 
+Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* > *Vehicle* > *Automobile* > *Car* > *Sedan*. Est ce que *Mobility* ne serait pas systématiquement trop abstrait ? Sur cet exemple, à partir de *Car* et pour la suite de la taxonomie, il ne s'agit plus tellement de concepts dificilles à trouver. Et si le métier ne parle que de *voiture*, le terme devrait être *Car* et non *Vehicle* ([YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)). 
 
 ### Possibilité d'un glossaire neutre
 
 Lister tous ces critères permet de faire le constat que **tous les mots du dictionnaire anglais ne sont pas de bons candidats**. 
 
-Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire de quelques milliers de mots (?).
+Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire (de quelques milliers de mots ?).
 
 Cette idée est peut-être farfelue ou irréalisable ; il semble en tout cas que personne n'ait proposé la création d'un tel glossaire dans la littérature ou dans un projet ouvert. 
 
-Mais même s'il était possible de le construire, le problème est de **trouver un mot à partir d'un autre, ou à partir d'une définition**. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
+**Mais même s'il était possible de le construire, le problème est de trouver un mot** à partir d'un autre, ou à partir d'une définition. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
 
 Si seulement il existait un outil qui permette de saisir une description et d'obtenir une liste de propositions de mots... 
 
