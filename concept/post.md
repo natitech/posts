@@ -36,19 +36,19 @@ Un autre exemple intéressant de convention est l'idée de "moule", c'est-à-dir
 
 Globalement, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
 
-L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions.
+L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions. La syntaxe ne devrait donc pas demander beaucoup d'effort.
 
 ### Homogénéité et langage
 
 Dans le prolongement de l'idée d'homogénéité, il peut être **préférable d'utiliser des termes quasi-exclusivement anglais**, y compris pour un domaine métier qui serait dans une autre langue :
 - Le travail de compréhension du code est déjà assez dur, inutile donc de mélanger deux langues
 - Un nouveau contributeur ne saura pas non plus quand utiliser une langue ou l'autre
-- Aucune étude comparative ne permet de l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation car plus concis
+- Aucune étude comparative ne semble pouvoir l'affirmer, mais l'anglais est parfois considéré plus efficace pour la conceptualisation car plus concis
 
 ```
-//En franglais                  //En anglais
-if colis.isPret()               if colis.isReady()
-    return colis.getContenu()       return colis.getContent()    
+//En franglais                                 //En anglais
+if colis.isTropVolumineux(modeDeTransport)     if package.isTooLarge(shipping)
+    throw new TransportException()                 throw new ShippingException()
 ```
 
 ### Niveau d'abstraction et renommage
