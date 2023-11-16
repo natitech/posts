@@ -213,7 +213,7 @@ Personnellement, il y a encore quelques temps, je pensais que notre véritable r
 
 ---
 
-*Nommage, Concept, Abstraction, Ubiquitous language, Efficacité, Linguistique, LLM*
+*Nommage, Concept, Abstraction, Langage ubiquiste, Efficacité, Linguistique, LLM*
 
 © 2023 - Antoine ROLLAND - licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
 
