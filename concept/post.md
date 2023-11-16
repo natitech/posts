@@ -1,6 +1,6 @@
 # Un mot sur la conceptualisation
 
-*Pourquoi, quand et comment être efficace lors du nommage*
+## Pourquoi, quand et comment être efficace lors du nommage
 
 Le nommage est souvent présenté comme l'une des choses les plus difficiles du développement logiciel.
 
@@ -205,7 +205,7 @@ Il existe quelques critères notamment linguistiques qui permettent d'être plus
 
 A ce sujet. Comme dans beaucoup d'autres métiers, l'émergence des LLM est une invitation à l'introspection, à la réflexion en profondeur du rôle d'un ingénieur logiciel :
 - Certains proposent que les tests restent la prérogative des humains et que la machine s'occupe d'écrire le code de production ;
-- D'autres soulignent que les LLM sont incapables d'écrire du code propre notamment parce que les LLM sont incapables de faire du Test Driven Development. De l'aveu même de la machine (!), "Writing tests is typically a task performed by human developers to ensure the correctness and robustness of their software." [^160]
+- D'autres soulignent que les LLM sont incapables d'écrire du code propre notamment parce que les LLM sont incapables de faire du Test Driven Development. De l'aveu même de la machine (!), "*Writing tests is typically a task performed by human developers to ensure the correctness and robustness of their software*". [^160]
 
 Personnellement, il y a encore quelques temps, je pensais que notre véritable rôle pourrait justement être de rendre lisible la complexité par le nommage et que notre imagination produirait de meilleurs résultats. Mais je n'en suis désormais plus si sûr... A moins d'écrire un logiciel extrêmement original, la plupart du temps nous cherchons à trouver des termes dont l'usage n'est pas confidentiel. Il parait donc légitime de demander à un LLM. Il peut être regrettable d'utiliser une langue ainsi appauvrie et consensuelle mais il faut probablement l'assumer dans ce cas.
 
