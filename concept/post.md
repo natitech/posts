@@ -24,7 +24,7 @@ Même en étant seul, quelques années (ou quelques mois...) suffisent à deveni
 
 Certaines études essayent de creuser d'avantage cette notion de lisibilité en l'associant à la notion de charge cognitive. Il devient alors possible de quantifier une amélioration ou une détérioration de lisibilité en mesurant l'activité cérébrale ou la précision et le temps de réponse à des tests de compréhension de code [^60] [^61]. 
 
-Quelles que soient les méthodes utilisées, il parait imprudent de ne pas tenir compte de la lisibilité et du nommage tant les études convergent [^70].
+Quelle que soit la nature des arguments utilisés, il parait imprudent de ne pas tenir compte de la lisibilité et du nommage tant les études convergent [^70].
 
 ### Homogénéité et syntaxe
 
