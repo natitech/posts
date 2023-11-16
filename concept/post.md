@@ -28,11 +28,11 @@ Quelle que soit la nature des arguments utilisés, il parait imprudent de ne pas
 
 ### Homogénéité et syntaxe
 
-Pour améliorer le nommage, il existe de nombreuses recommandations de syntaxe. On y trouve par exemple des arbitrages entre camelCase et snake_case. 
+Pour améliorer le nommage, il existe de nombreux guides et recommandations de syntaxe [^71].
 
 Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation snake_case demande moins d'effort en lecture mais est plus imprécise que le camelCase [^80].
 
-Un autre exemple intéressant de convention est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
+Un autre exemple de recommandation est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
 
 Globalement, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
 
@@ -126,7 +126,7 @@ Comme autre critère que le sens, il est possible de reprendre les **critères l
 - Comporte un nombre de lettres qui soit un compromis entre vitesse de compréhension [^120] et mémoire à court terme [^130], donc plus de 3 lettres (en fait, au moins une syllabe, ce qui rejoint aussi une recommandation que le terme soit prononçable) et moins de 15 lettres. Cette dernière limite est assez arbitraire mais il n'y a de toute façon plus beaucoup de mots à partir de 15 lettres [^131]. D'autre part, même avec 14 lettres, *Transportation* peut devenir par exemple *TransportationStrategyImplementation*, ce qui fait déjà assez long.
 - Soit dans le registre courant (par opposition à familier et soutenu ou même littéraire) : comme ordre de grandeur, il y a envion 600.000 mots dans le dictionnaire d'Oxford, 300.000 qui ne sont pas considérés obsolètes, 30.000 qui sont utilisés couramment. Il est assez dommage de se priver de 270.000 mots mais est ce que *Peregrination* peut être préférable à *Travel* ?
 
-Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe un concept intéressant appelé "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
+Pour aller encore un peu plus loin dans cette approche purement linguistique, il existe une relation appelée "hyperonymie" [^150]. Il s'agit tout simplement du terme linguistique pour désigner l'abstraction ! Un *animal* est l'hyperonyme d'un *lion*. A l'inverse, une *gazelle* est l'hyponyme d'un *animal*. L'ensemble des hyperonymes forme une taxonomie.
 
 Ainsi, un **bon terme devrait être aussi un hyperonyme**, mais pas trop haut dans la taxonomie pour ne pas devenir trop générique non plus.
 
@@ -232,6 +232,8 @@ Personnellement, il y a encore quelques temps, je pensais que notre véritable r
 [^61]: [J. Siegmund, C. Kästner, S. Apel, C. Parnin, A. Bethmann, T. Leich, G. Saake, and A. Brechmann. Understanding source code with functional magnetic resonance imaging. 2014](https://kilthub.cmu.edu/articles/Understanding_Understanding_Source_Code_with_Functional_Magnetic_Resonance_Imaging/6626357/files/12123905.pdf)
 
 [^70]: [Delano Oliveira, Reydne Bruno, Fernanda Madeiral†, Fernando Castor. Evaluating Code Readability and Legibility: An Examination of Human-centric Studies. 2021](https://arxiv.org/pdf/2110.00785.pdf)
+
+[^71]: [Conventions de nommage .NET](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names#naming-conventions)
 
 [^80]: [Bonita Sharif and Jonathan I. Maletic. An Eye Tracking Study on camelCase and under_score Identifier Styles. 2010](https://www.researchgate.net/profile/Bonita-Sharif/publication/224159770_An_Eye_Tracking_Study_on_camelCase_and_under_score_Identifier_Styles/links/00b49534cc03bab22b000000/An-Eye-Tracking-Study-on-camelCase-and-under-score-Identifier-Styles.pdf)
 
