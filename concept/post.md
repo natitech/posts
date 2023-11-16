@@ -55,7 +55,7 @@ if colis.isTropVolumineux(modeDeTransport)     if package.isTooLarge(shipping)
 
 ### Niveau d'abstraction et renommage
 
-Après tous ces rappels, il faut d'abord examiner les situations où le temps passé à chercher un terme est vraiment nécessaire.
+Après tous ces rappels, il convient d'abord examiner les situations où le temps passé à chercher un terme est vraiment nécessaire.
 
 Et il s'avère que **le temps investi devrait être proportionnel au niveau d'abstraction**. 
 
