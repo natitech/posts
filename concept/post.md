@@ -32,11 +32,11 @@ Pour améliorer le nommage, il existe de nombreux guides et recommandations de s
 
 Sur ce type de recommandation, très souvent, chacun a ses habitudes et les arguments ne sont pas décisifs. Théoriquement, les neurosciences peuvent aider à trancher des débats souvent stériles. Mais en pratique, c'est moins clair. Par exemple, une étude basée sur l'enregistrement du mouvement des yeux tend à conclure que la notation snake_case demande moins d'effort en lecture mais est plus imprécise que le camelCase [^80].
 
-Un autre exemple de recommandation est l'idée de "moule", c'est-à-dire la manière dont les termes vont se combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
+Un autre exemple de recommandation est l'idée de "moule". Une fois que les termes sont définis, un moule va définir comment les combiner pour constituer un nom. Par exemple, la convention dite "big-endian" où une variable est suffixée par ordre d'importance [^90]. Le nombre maximum de commandes par mois serait donc *orders_per_month_max* plutôt que *max_orders_per_month*.
 
 Globalement, dans toutes ces recommandations, **le plus important est l'homogénéité**. Si, pour certains, le camelCase est plus lisible que le snake_case, il est en revanche certain pour tout le monde que le mélange des deux sera plus dur à lire.
 
-L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions. La syntaxe ne devrait donc pas demander beaucoup d'effort.
+L'équipe doit donc se mettre d'accord sur un jeu de conventions qui sera appliqué dans un projet (et même des moyens d'en assurer le respect). Tout le monde gagnera en lecture et un nouveau contributeur aura plus de facilité à adopter ces conventions. 
 
 ### Homogénéité et langage
 
@@ -90,9 +90,9 @@ Quelques exemples de déclinaisons nom -> verbe plus ou moins heureuses :
 
 ### Lister des candidats
 
-Avant tout, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client.
+Avant tout, le meilleur terme est celui qui existe déjà dans le code. Il faut donc s'assurer que le concept est vraiment nouveau. D'autre part, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client. 
 
-Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. Pour faire simple, il s'agit de sélectionner les concepts, de trouver les termes et de les associer en suivant un moule. 
+Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. En résumé, il s'agit de sélectionner les concepts, de choisir les termes et de les associer en suivant un moule (voir précédemment). 
 
 Voici ce que Felienne Hermans décrit sur le choix des termes:
 
