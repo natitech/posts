@@ -138,7 +138,7 @@ Lister tous ces critères permet de faire le constat que **tous les mots du dict
 
 Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire.
 
-Une étude propose une liste de verbes avec une grande précision de définition [^151]. En dehors de cette initiative, il semble que personne n'ait proposé la création d'un glossaire plus vaste dans la littérature ou dans un projet ouvert. Cette idée est peut-être irréalisable (autrement dit, combien de milliers de mots correspondent aux critères précédents ?).
+Une étude propose une liste de quelques dizaines de verbes [^151] qui pourrait être un début. En dehors de cette initiative, il semble que personne n'ait proposé la création d'un glossaire plus vaste dans la littérature ou dans un projet ouvert. Cette idée n'est peut être pas réalisable, la problématique étant de savoir combien de milliers de mots correspondent aux critères précédents.
 
 **Mais même s'il était possible de le construire, le problème est de trouver un mot** à partir d'un autre, ou à partir d'une définition. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
 
