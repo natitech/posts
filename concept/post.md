@@ -136,9 +136,9 @@ Par exemple, à partir de la taxonomie suivante : *Mobility* > *Transportation* 
 
 Lister tous ces critères permet de faire le constat que **tous les mots du dictionnaire anglais ne sont pas de bons candidats**. 
 
-Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire (de quelques milliers de mots ?).
+Il devrait donc être possible de construire un grand glossaire qui soit neutre d'un point de vue du domaine métier et qui listerait les termes acceptables d'un point de vue linguistique. Il n'y aurait plus qu'à piocher dans ce glossaire.
 
-Cette idée est peut-être farfelue ou irréalisable ; il semble en tout cas que personne n'ait proposé la création d'un tel glossaire dans la littérature ou dans un projet ouvert. 
+Une étude propose une liste de verbes avec une grande précision de définition [^151]. En dehors de cette initiative, il semble que personne n'ait proposé la création d'un glossaire plus vaste dans la littérature ou dans un projet ouvert. Cette idée est peut-être irréalisable (autrement dit, combien de milliers de mots correspondent aux critères précédents ?).
 
 **Mais même s'il était possible de le construire, le problème est de trouver un mot** à partir d'un autre, ou à partir d'une définition. Avoir la liste ne suffit donc pas à être efficace, il faudrait pouvoir aussi construire un dictionnaire de synonymes ou même un dictionnaire inversé.
 
@@ -254,5 +254,7 @@ Personnellement, il y a encore quelques temps, je pensais que notre véritable r
 [^140]: [Vladimir Khorikov. Ubiquitous Language and Naming. 2017](https://enterprisecraftsmanship.com/posts/ubiquitous-language-naming/)
 
 [^150]: [Source Code Analysis and Natural Language Laboratory. Identifier Naming Structure Catalogue. 2022](https://github.com/SCANL/identifier_name_structure_catalogue#linguistic-antipatterns)
+
+[^151]: [Einar W. Høst, Bjarte M. Østvold. The Programmer’s Lexicon, Volume I: The Verbs. 2007](https://projects.nr.no/en/nrpublication?query=/file/rask/old/lexicon.pdf)
 
 [^160]: [Jake Ogden. Job market risk assessment: clean code vs. AI code. 2023](https://cleancoders.com/blog/2023-10-29-Job-Market-Risk-Assessment-Clean-Code-vs-AI-Code)
