@@ -78,7 +78,7 @@ Au contraire, l'effort de nommage doit se concentrer sur le haut niveau d'abstra
 A ce stade, il devient nécessaire de repréciser cette notion de "terme".
 
 Une recommandation assez classique [^20] est d'utiliser des verbes pour les méthodes, et des noms communs pour les classes. Comme le terme doit désigner un concept, l'idéal serait :
-- Qu'il ne soit pas composé de plusieurs mots car il y a de fortes chances que nous soyons obligés de l'associer à plusieurs autres termes (techniques ou non)
+- Qu'il ne soit pas composé de plusieurs mots car il y a de fortes chances qu'il soit associé plus tard à d'autres termes (techniques ou non)
 - Qu'il puisse se décliner facilement au pluriel ; vu dans une base de code, *Quantum* et *Quanta* sont utilisés pour désigner des ensembles de quantité. Mais avec parfois *Quantums*, *Quantas* et parfois *Quanti* ou même *Quantis* pour finir en *Quantits*...
 - Qu'il puisse se décliner en nom commun ou en verbe selon l'usage qui en sera fait ; en anglais, il est a priori plus simple de transformer un nom commun en verbe que l'inverse. C'est pour cette raison que la recherche d'un terme devrait plutôt porter sur un nom commun
 
