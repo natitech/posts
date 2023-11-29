@@ -49,8 +49,8 @@ Un exemple qui ne prouve rien mais qui permet de se faire une idée de ses préf
 
 ```
 //En franglais                                 //En anglais
-if colis.isTropVolumineux(modeDeTransport)     if package.isTooLarge(shipping)
-    throw new TransportException()                 throw new ShippingException()
+if colis.isTropVolumineux(transporteur)     if package.isTooLarge(shipping)
+    throw new TransporteurException()           throw new ShippingException()
 ```
 
 ### Niveau d'abstraction et renommage
