@@ -90,7 +90,7 @@ Quelques exemples de déclinaisons nom -> verbe plus ou moins heureuses :
 
 ### Lister des candidats
 
-Avant tout, le meilleur terme est celui qui existe déjà dans le code. Il faut donc s'assurer que le concept est vraiment nouveau. D'autre part, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part, parfois en collaboration directe avec le client. 
+Avant tout, le meilleur terme est celui qui existe déjà dans le code. Il faut donc s'assurer que le concept est vraiment nouveau. D'autre part, l'écriture de tests et de code nécessite beaucoup de ressources mentales. Le travail de conceptualisation devrait donc être une tâche à part.
 
 Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgarisé par Felienne Hermans dans son livre [^110]. En résumé, il s'agit de sélectionner les concepts, de choisir les termes et de les associer en suivant un moule (voir précédemment). 
 
@@ -98,7 +98,7 @@ Voici ce que Felienne Hermans décrit sur le choix des termes:
 
 > Bien souvent, choisir les bons termes est simple, avec un terme spécifique étant le choix évident car il est utilisé dans le domaine du code ou a été utilisé à travers la base de code. Cependant, dans ses expériences, Feitelson a observé qu'il y avait également **de nombreux cas où, pour au moins l'un des termes, de nombreuses options concurrentes différentes étaient suggérées par les participants**. Une telle diversité peut poser problème lorsque les développeurs sont perplexes quant à savoir si les synonymes signifient la même chose ou représentent des nuances différentes.
 
-Face au besoin de trouver un terme pour un concept qui n'est pas évident, de multiples propositions sont souvent possibles. Il est donc intéressant de faire aussi ce travail au moins à 2 (par exemple dans une session de pair programming) ou même via un brainstorming en équipe.
+Face au besoin de trouver un terme pour un concept qui n'est pas évident, de multiples propositions sont souvent possibles. Il est donc intéressant de faire aussi ce travail au moins à 2 (par exemple dans une session de pair programming), parfois en collaboration directe avec le client, ou même via un brainstorming.
 
 Une fois le moment trouvé et les participants réunis, il est tout simplement possible d'**utiliser un dictionnaire de synonymes** sur une ou plusieurs propositions initiales de noms communs. Si la langue du métier n'est pas l'anglais, il est aussi possible d'obtenir d'**autres suggestions par traduction et même par rétrotraduction**. 
 
