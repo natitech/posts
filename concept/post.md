@@ -96,7 +96,7 @@ Il existe des modèles de nommage, notamment celui de Feitelson [^100] vulgaris�
 
 Voici ce que Felienne Hermans décrit sur le choix des termes:
 
-> Often choosing the right words is straightforward, with one specific word being the obvious choice because it is used in the domain of the code or has been used across the codebase. However, in his experiments Feitelson observed that there were also **many cases in which for at least one of the words many different contending options were suggested by participants**. Such diversity can cause problems when developers become confused about whether synonyms mean the same thing or represent nuanced differences.
+> Bien souvent, choisir les bons termes est simple, avec un terme spécifique étant le choix évident car il est utilisé dans le domaine du code ou a été utilisé à travers la base de code. Cependant, dans ses expériences, Feitelson a observé qu'il y avait également **de nombreux cas où, pour au moins l'un des termes, de nombreuses options concurrentes différentes étaient suggérées par les participants**. Une telle diversité peut poser problème lorsque les développeurs sont perplexes quant à savoir si les synonymes signifient la même chose ou représentent des nuances différentes.
 
 Face au besoin de trouver un terme pour un concept qui n'est pas évident, de multiples propositions sont souvent possibles. Il est donc intéressant de faire aussi ce travail au moins à 2 (par exemple dans une session de pair programming) ou même via un brainstorming en équipe.
 
