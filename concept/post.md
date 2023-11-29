@@ -111,7 +111,7 @@ Par exemple :
 - Quelques synonymes : *affrètement*, *charge*
 - Les traductions donnent : *loading*, *freight*, *chartering*, *cargo*, *shipment*, *payload*
 
-Globalement, il est recommandé d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Manager* ou *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de conception (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
+Globalement, il est recommandé d'éliminer les termes trop équivoques, par exemple ne pas utiliser *Data* ("weasel words" en anglais) [^140]. Il est aussi préférable d'éviter les patrons de conception (comme *Factory*) ou les termes d'infrastructure (comme *Container*).
 
 ### Évaluer le meilleur terme 
 
